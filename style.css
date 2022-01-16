@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.lending_page{
+    position: absolute;
+    right:0;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    padding:100px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* navbar */
+.navbar header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    padding: 40px 100px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+#logo{
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+.navbar .burger{
+    width: 60px;
+    height: 60px;
+    background: url('./public/menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position:center;
+    cursor: pointer;
+}
+
+/* main */
+.text{
+    position: relative;
+    z-index: 100;
+}
+.text h2{
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height:1em;
+}
+.text h3{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1em;
+}
+.text p{
+    font-size: 1em;
+    max-width: 700px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.text a{
+    background-color: white;
+    padding: 10px 30px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin-top:1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    size: 1em;
+    transition: 0.2s;
+    font-weight: 500;
+    color: #000;
+    border-radius: 5px;
+}
+.text a:hover{
+    letter-spacing: 0.3em;
+}
+/* video */
+main video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* overlap */
+main .overlap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(3, 169, 244, 0.5);
+}
+
+/* Footer */
+.social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 100px;
+    width: 100%;
+    z-index: 100;
+}
+.social ul{
+    list-style: none;
+}
+.social .icon{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    filter: invert(100%);
+    transform: scale(0.5);
+    padding: 0.25em;
+}
+.social li{
+    display: inline-block;
+    margin-right: 0.5em;
+    transition:0.2s;
+    
+}
+.social li:hover{
+    transform: translateY(-2em);
+    
+}
